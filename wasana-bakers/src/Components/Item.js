@@ -5,7 +5,6 @@ function Item({ item }) {
   return (
     <Paper>
       <Button className="CheckButton">
-        <img src={item.image} alt={item.title} width="100%" />
       </Button>
     </Paper>
   );
