@@ -5,7 +5,11 @@ import Slider from "../helper/slider.json";
 
 function Slideshow(props) {
   return (
-    <Carousel>
+    <Carousel
+      sx={{
+        margin: "0px",
+      }}
+    >
       {Slider.map((item, i) => (
         <Item key={item.id} item={item} />
       ))}
