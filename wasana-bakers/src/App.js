@@ -1,7 +1,12 @@
 import "./App.css";
+import Slideshow from "./Components/Slideshow";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Slideshow />
+    </>
+  );
 }
 
 export default App;
