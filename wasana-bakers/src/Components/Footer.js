@@ -31,8 +31,12 @@ function Footer() {
             <IconButton>
               <Box
                 component="img"
-                margin={"30px"}
-                sx={{ marginTop: "10px", height: "150px", width: "150px" }}
+                marginRight={"10px"}
+                sx={{
+                  marginTop: "10px",
+                  height: { xs: "120px", md: "150px" },
+                  width: "auto",
+                }}
                 alt="Wasana Bakers Logo"
                 src={Logo}
               />

@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router } from 'react-router-dom';
 import Slideshow from "./Components/Slideshow";
 import Footer from "./Components/Footer";
@@ -13,6 +14,7 @@ const CardContainer = styled('div')({
 function App() {
   return (
     <>
+      <Navbar />
       <Slideshow />
       <CardContainer>
         <CardComponent />
