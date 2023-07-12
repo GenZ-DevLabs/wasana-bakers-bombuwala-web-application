@@ -67,10 +67,6 @@ const CardComponent = () => {
       <Title variant="h4" component="h1">
         Icing Cake Designs
       </Title>
-      <Routes>
-        <Route path="./Components/Footer" element={<Home />} />
-        <Route path="./Components/Footer" element={<DesignDetails />} />
-      </Routes>
       <CardContainer>{renderCards()}</CardContainer>
     </Router>
   );
