@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "../Assets/logo.png";
+import { height } from "@mui/system";
 
 const pages = ["Designs", "About Us", "Contact Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -36,7 +37,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#2b2b2b" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#2b2b2b", height: "75px"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton>
@@ -49,24 +50,25 @@ function ResponsiveAppBar() {
           </IconButton>
           <Typography
             variant="h6"
-            noWrap
+            //noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "flex", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
               align: "right",
+              textAlign: "center"
             }}
           >
             Horana Wasana Bakers Bombuwala
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent: 'flex-end' }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -118,7 +120,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           ></Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" },justifyContent: "flex-end" }}>
             {pages.map((page) => (
               <Button
                 key={page}

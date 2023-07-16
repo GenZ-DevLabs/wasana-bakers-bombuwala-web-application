@@ -41,7 +41,14 @@ function Footer() {
                 src={Logo}
               />
             </IconButton>
-            <Typography>
+            <Typography
+            
+            sx={{
+              
+              display: "block" ,
+              
+              
+            }}>
               Horana Wasana Bakers Bombuwala Branch: Amazing Designs and
               Delicious Icing Cakes for all Occasions, friendly service and
               reasonable prices.
@@ -56,7 +63,13 @@ function Footer() {
             alignItems={"center"}
             justifyContent={"center"}
           >
-            <Box>
+            <Box 
+            sx={{
+              
+              display: "block" ,
+              
+              
+            }}>
               <Typography variant="h6">Links</Typography>
               <Typography sx={{ marginTop: "20px" }}>About Us</Typography>
               <Typography sx={{ marginTop: "5px" }}>Our Products</Typography>
@@ -73,7 +86,16 @@ function Footer() {
             alignItems={"center"}
             justifyContent={"center"}
           >
-            <Box>
+            <Box
+            sx={{
+              
+              
+              paddingLeft: {xs: 15,md: 0},
+              paddingTop: {xs: 2,md: 0},
+              paddingBottom: {xs: 2,md: 0}
+              
+              
+            }}>
               <Typography variant="h6">Contact Details</Typography>
               <Typography sx={{ marginTop: "20px" }}>
                 Phone: +94 71 551 4646
@@ -96,7 +118,13 @@ function Footer() {
             alignItems={"center"}
             justifyContent={"center"}
           >
-            <Box>
+            <Box
+            sx={{
+              
+              display: "block" ,
+              
+              
+            }}>
               <Typography variant="h6">Follow Us</Typography>
               <IconButton>
                 <FacebookIcon />

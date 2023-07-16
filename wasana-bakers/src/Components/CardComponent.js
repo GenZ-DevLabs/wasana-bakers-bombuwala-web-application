@@ -11,7 +11,8 @@ const CardContainer = styled('div')({
 });
 
 const StyledCard = styled(Card)({
-  width: 'calc(18% - 20px)', 
+  //width: 'calc(18% - 20px)',
+  width: '200px',
   margin: '20px',
   cursor: 'pointer',
   transition: 'transform 0.3s',
