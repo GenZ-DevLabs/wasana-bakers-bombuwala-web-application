@@ -5,6 +5,7 @@ import Slideshow from "./Components/Slideshow";
 import Footer from "./Components/Footer";
 import CardComponent from "./Components/CardComponent"
 import { styled } from '@mui/system';
+import DesignBoard from './Components/DesignBoard';
 
 const CardContainer = styled('div')({
   width: '80%', // Set the desired width
@@ -14,7 +15,8 @@ const CardContainer = styled('div')({
 function App() {
   return (
     <>
-      <Navbar />
+    <Navbar />
+    {/* <DesignBoard /> */}
       <Slideshow />
       <CardContainer>
         <CardComponent />
